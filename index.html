@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN GATE | شركة البوابة الخضراء للتجارة العامة والخدمات العامة ذ.م.م</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="https://www.greengate.icu/favIcon.jpg">
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="شركة البوابة الخضراء للتجارة العامة والخدمات العامة ذ.م.م - بوابتكم الاستراتيجية للتجارة الدولية وسلاسل الإمداد المتطورة في العراق والشرق الأوسط.">
+  <meta property="og:title" content="GREEN GATE | General Trade & General Services LLC">
+  <meta property="og:description" content="Global horizons in general trade, international supply chains, and specialized logistics.">
+  <meta property="og:image" content="https://www.greengate.icu/logo.avif">
+  
+  <!-- Premium Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Readex+Pro:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Libraries (GSAP, Lenis, EmailJS, Lucide, Confetti) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Ambient Luxury Glow Orbs -->
+  <div class="ambient-mesh">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+  
+  <!-- Film Grain Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Custom Physics Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <div class="header-nav-wrapper">
+    <header class="header-nav">
+      <a href="#" class="nav-brand">
+        <img src="https://www.greengate.icu/logo.avif" alt="Green Gate Logo" width="38" height="38">
+        <div class="brand-text">
+          <span>GREEN</span> <span style="color: var(--primary-emerald-light);">GATE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="#network" class="nav-link" data-i18n="navTrading">شبكة التجارة</a></li>
+        <li><a href="#facilities" class="nav-link" data-i18n="navFacilities">المستودعات والمصانع</a></li>
+        <li><a href="#activities" class="nav-link" data-i18n="navActivities">الأنشطة والمعارض</a></li>
+        <li><a href="#team" class="nav-link" data-i18n="navTeam">مجلس الإدارة</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">اتصل بنا</a></li>
+      </ul>
+
+      <!-- Header Actions (Language, Social, Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ar">العربية</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <!-- Social Quick Links -->
+        <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="LinkedIn">
+          <i data-lucide="linkedin" style="width: 17px; height: 17px;"></i>
+        </a>
+        <a href="https://wa.me/9647858802023" target="_blank" rel="noopener noreferrer" class="nav-social-link" title="WhatsApp" style="color: #25D366;">
+          <i data-lucide="message-circle" style="width: 17px; height: 17px;"></i>
+        </a>
+
+        <!-- Quick Inquiry CTA -->
+        <a href="#contact" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;" data-i18n="navCta">طلب استشارة</a>
+
+        <!-- Mobile Hamburger -->
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-menu-drawer">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+        <div class="nav-brand">
+          <img src="https://www.greengate.icu/logo.avif" alt="Logo" width="34" height="34">
+          <div class="brand-text"><span>GREEN</span> <span style="color: var(--primary-emerald-light);">GATE</span></div>
+        </div>
+        <button class="mobile-drawer-close" style="background: none; border: none; color: #fff; cursor: pointer;">
+          <i data-lucide="x" style="width: 26px; height: 26px;"></i>
+        </button>
+      </div>
+      
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+        <li><a href="#hero" class="nav-link" style="font-size: 1.2rem;" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="#network" class="nav-link" style="font-size: 1.2rem;" data-i18n="navTrading">شبكة التجارة</a></li>
+        <li><a href="#facilities" class="nav-link" style="font-size: 1.2rem;" data-i18n="navFacilities">المستودعات والمصانع</a></li>
+        <li><a href="#activities" class="nav-link" style="font-size: 1.2rem;" data-i18n="navActivities">الأنشطة والمعارض</a></li>
+        <li><a href="#team" class="nav-link" style="font-size: 1.2rem;" data-i18n="navTeam">مجلس الإدارة</a></li>
+        <li><a href="#contact" class="nav-link" style="font-size: 1.2rem;" data-i18n="navContact">اتصل بنا</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+        <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link"><i data-lucide="linkedin"></i></a>
+        <a href="https://wa.me/9647858802023" target="_blank" class="nav-social-link" style="color: #25D366;"><i data-lucide="message-circle"></i></a>
+      </div>
+      <a href="https://wa.me/9647858802023" class="btn-primary btn-whatsapp" style="width: 100%; text-align: center;">
+        <i data-lucide="message-circle"></i> <span>واتساب المباشر</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      
+      <!-- Hero Left: Typography & CTAs -->
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <div class="status-badge">
+            <span class="ping-dot"></span>
+            <span data-i18n="heroStatus">رؤية تجارية رائدة عالمياً</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title heading-display">
+          <span data-i18n="heroTitlePrefix">آفاق عالمية للتجارة العامة و</span>
+          <span class="gradient-text-emerald" data-i18n="heroTitleHighlight">الخدمات اللوجستية المتكاملة</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          نربط الأسواق العالمية بالعراق والشرق الأوسط من خلال شبكة توريد وشراكات استراتيجية متطورة مع كبرى الشركات المصنعة في آسيا وأوروبا.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#network" class="btn-primary">
+            <span data-i18n="heroCtaPrimary">استكشف شراكاتنا الدولية</span>
+            <i data-lucide="arrow-left" class="rtl-flip" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="https://wa.me/9647858802023" target="_blank" class="btn-secondary btn-whatsapp">
+            <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+            <span data-i18n="heroCtaSecondary">تواصل معنا عبر واتساب</span>
+          </a>
+        </div>
+
+        <!-- Metric Badges Row -->
+        <div class="hero-stats-row">
+          <div class="stat-box">
+            <span class="stat-number gradient-text-emerald" data-i18n="heroStat1Number">15+</span>
+            <span class="stat-label" data-i18n="heroStat1Label">دولة وشريك تجاري دولي</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number gradient-text-emerald" data-i18n="heroStat2Number">4+</span>
+            <span class="stat-label" data-i18n="heroStat2Label">مجمعات ومستودعات استراتيجية</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number gradient-text-gold" data-i18n="heroStat3Number">100%</span>
+            <span class="stat-label" data-i18n="heroStat3Label">دقة وجودة في التوريد والتنفيذ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive 3D Visual & Floating Badges -->
+      <div class="hero-visual">
+        <div class="hero-visual-card">
+          <img src="https://www.greengate.icu/images/shiptrade.jpeg" alt="Green Gate Trade Operations" class="zoomable-img" loading="eager">
+          <div class="overlay"></div>
+        </div>
+
+        <!-- Floating Glass Card 1 (Bottom) -->
+        <div class="floating-glass-card floating-card-1">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--border-emerald); display: flex; align-items: center; justify-content: center; color: var(--primary-emerald-light);">
+            <i data-lucide="globe-2" style="width: 22px; height: 22px;"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.92rem; font-weight: 700; color: #fff;" data-i18n="floatingBadge1Title">شريك موثوق معتمد</div>
+            <div style="font-size: 0.78rem; color: var(--primary-emerald-light);" data-i18n="floatingBadge1Sub">العراق • الصين • تركيا • مصر</div>
+          </div>
+        </div>
+
+        <!-- Floating Glass Card 2 (Top) -->
+        <div class="floating-glass-card floating-card-2">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(212, 175, 55, 0.15); border: 1px solid rgba(212, 175, 55, 0.3); display: flex; align-items: center; justify-content: center; color: var(--accent-gold);">
+            <i data-lucide="award" style="width: 22px; height: 22px;"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.92rem; font-weight: 700; color: #fff;" data-i18n="floatingBadge2Title">مشاركة رسمية</div>
+            <div style="font-size: 0.78rem; color: var(--accent-gold);" data-i18n="floatingBadge2Sub">معرض كانتون الدولي 2026</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: GLOBAL TRADE NETWORK & INTERACTIVE MAP
+       ========================================================================== -->
+  <section class="section-trade-map" id="network">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      
+      <!-- Section Header -->
+      <div class="section-header-reveal" style="text-align: center; max-width: 780px; margin: 0 auto 60px;">
+        <div class="status-badge" style="margin-bottom: 16px;">
+          <i data-lucide="compass" style="width: 15px; height: 15px;"></i>
+          <span data-i18n="networkBadge">امتداد جغرافي عالمي</span>
+        </div>
+        <h2 class="heading-display" style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 20px;">
+          <span data-i18n="networkTitle">شبكة التجارة وخطوط التوريد الدولية</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="networkSubtitle">
+          شراكات راسخة ومباشرة مع مصانع ومراكز التجارة في الصين، تركيا، ماليزيا، تايلاند وأوروبا لتزويد السوق العراقي بأفضل المنتجات وبأعلى معايير الجودة.
+        </p>
+      </div>
+
+      <!-- Interactive SVG Trade Map Canvas -->
+      <div class="map-canvas-wrapper">
+        <svg class="map-svg" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Stylized World Map Base (Subtle Dots / Outlines) -->
+          <g opacity="0.25" stroke="rgba(255, 255, 255, 0.4)" stroke-width="0.8">
+            <!-- Simplified Continental Outlines -->
+            <!-- Europe / Middle East -->
+            <path d="M 450,110 Q 480,100 520,130 T 570,180 T 540,240 T 490,260 T 460,200 Z" fill="rgba(16, 185, 129, 0.05)"/>
+            <!-- Asia -->
+            <path d="M 580,120 Q 700,90 820,130 T 890,240 T 820,320 T 680,290 T 600,220 Z" fill="rgba(16, 185, 129, 0.05)"/>
+            <!-- Africa / Egypt -->
+            <path d="M 450,230 Q 520,240 540,300 T 510,400 T 440,380 T 420,280 Z" fill="rgba(16, 185, 129, 0.04)"/>
+          </g>
+
+          <!-- Animated Trade Route Lines (Connecting to Baghdad [530, 220]) -->
+          <!-- China to Baghdad -->
+          <path d="M 830,220 Q 690,160 530,220" class="trade-line" stroke-width="2.5"/>
+          <!-- Turkey to Baghdad -->
+          <path d="M 490,170 Q 510,195 530,220" class="trade-line" stroke-width="2"/>
+          <!-- Malaysia/Thailand to Baghdad -->
+          <path d="M 780,310 Q 660,280 530,220" class="trade-line" stroke-width="2"/>
+          <!-- Europe to Baghdad -->
+          <path d="M 440,140 Q 480,180 530,220" class="trade-line" stroke-width="2"/>
+          <!-- Baghdad to Egypt -->
+          <path d="M 530,220 Q 500,240 480,260" class="trade-line" stroke-width="2.5" stroke="#d4af37"/>
+
+          <!-- Nodes: Hub Locations -->
+          <!-- China (Guangzhou) -->
+          <g class="hub-node" transform="translate(830, 220)">
+            <circle class="hub-pulse" r="14" fill="rgba(16, 185, 129, 0.3)"/>
+            <circle r="7" fill="#10b981"/>
+            <text x="12" y="5" fill="#fff" font-size="12" font-weight="700">China (Canton)</text>
+          </g>
+
+          <!-- Turkey (Istanbul) -->
+          <g class="hub-node" transform="translate(490, 170)">
+            <circle class="hub-pulse" r="12" fill="rgba(16, 185, 129, 0.3)"/>
+            <circle r="6" fill="#10b981"/>
+            <text x="-65" y="-10" fill="#fff" font-size="11" font-weight="600">Turkey</text>
+          </g>
+
+          <!-- Europe -->
+          <g class="hub-node" transform="translate(440, 140)">
+            <circle class="hub-pulse" r="12" fill="rgba(6, 182, 212, 0.3)"/>
+            <circle r="6" fill="#06b6d4"/>
+            <text x="-50" y="-8" fill="#fff" font-size="11" font-weight="600">Europe</text>
+          </g>
+
+          <!-- Malaysia & Thailand -->
+          <g class="hub-node" transform="translate(780, 310)">
+            <circle class="hub-pulse" r="12" fill="rgba(16, 185, 129, 0.3)"/>
+            <circle r="6" fill="#10b981"/>
+            <text x="12" y="5" fill="#fff" font-size="11" font-weight="600">SE Asia</text>
+          </g>
+
+          <!-- Egypt (Cairo Factory) -->
+          <g class="hub-node" transform="translate(480, 260)">
+            <circle class="hub-pulse" r="14" fill="rgba(212, 175, 55, 0.3)"/>
+            <circle r="7" fill="#d4af37"/>
+            <text x="-40" y="24" fill="#fbbf24" font-size="12" font-weight="700">Egypt Plant</text>
+          </g>
+
+          <!-- BAGHDAD (Central HQ & Master Node) -->
+          <g class="hub-node" transform="translate(530, 220)">
+            <circle class="hub-pulse" r="22" fill="rgba(52, 211, 153, 0.4)"/>
+            <circle r="10" fill="#34d399" stroke="#fff" stroke-width="2"/>
+            <text x="18" y="-5" fill="#34d399" font-size="14" font-weight="800">BAGHDAD (HQ)</text>
+          </g>
+        </svg>
+
+        <!-- Trade Hubs Detailed Cards Grid -->
+        <div class="trade-hubs-grid">
+          <div class="hub-badge-item">
+            <span class="hub-flag">🇨🇳</span>
+            <div>
+              <div style="font-weight: 700; color: #fff; font-size: 0.92rem;" data-i18n="hubChina">الصين (قوانغتشو / ييوو)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="hubChinaDesc">مركز التوريد والمنسوجات ومعرض كانتون</div>
+            </div>
+          </div>
+          <div class="hub-badge-item">
+            <span class="hub-flag">🇹🇷</span>
+            <div>
+              <div style="font-weight: 700; color: #fff; font-size: 0.92rem;" data-i18n="hubTurkey">تركيا (إسطنبول)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="hubTurkeyDesc">خطوط إمداد متسارعة للمنتجات الأوروبية</div>
+            </div>
+          </div>
+          <div class="hub-badge-item">
+            <span class="hub-flag">🇪🇬</span>
+            <div>
+              <div style="font-weight: 700; color: #fff; font-size: 0.92rem;" data-i18n="hubEgypt">مصر (القاهرة)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="hubEgyptDesc">مصنع الشركة المتكامل لخطوط الملابس</div>
+            </div>
+          </div>
+          <div class="hub-badge-item">
+            <span class="hub-flag">🇲🇾</span>
+            <div>
+              <div style="font-weight: 700; color: #fff; font-size: 0.92rem;" data-i18n="hubMalaysia">ماليزيا وتايلاند</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="hubMalaysiaDesc">توريد المنتجات الاستهلاكية والتجهيزات</div>
+            </div>
+          </div>
+          <div class="hub-badge-item" style="border-color: var(--border-emerald-bright); background: rgba(16, 185, 129, 0.1);">
+            <span class="hub-flag">🇮🇶</span>
+            <div>
+              <div style="font-weight: 800; color: var(--primary-emerald-light); font-size: 0.92rem;" data-i18n="hubIraq">العراق (بغداد - المقر الرئيسي)</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);" data-i18n="hubIraqDesc">المستودعات المركزية في الجامعة والشورجة</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: SCOPE OF BUSINESS & STRATEGIC EXPANSION (BENTO CARDS)
+       ========================================================================== -->
+  <section style="padding: 100px 4%; position: relative; z-index: 2;">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 32px;">
+        
+        <!-- Bento Card 1: Current Core Trading -->
+        <div class="glass-card" style="padding: 42px;">
+          <div style="width: 54px; height: 54px; border-radius: 16px; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--border-emerald); display: flex; align-items: center; justify-content: center; color: var(--primary-emerald-light); margin-bottom: 24px;">
+            <i data-lucide="package-check" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 style="font-size: 1.55rem; font-weight: 800; color: #fff; margin-bottom: 14px;" data-i18n="visionCard1Title">
+            الأنشطة التجارية الحالية
+          </h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 24px;" data-i18n="visionCard1Text">
+            تختص الشركة بتجارة المنسوجات المنزلية الراقية، الحقائب، والمستلزمات العامة مع إدارة سلاسل إمداد شاملة تمتد من المصانع حتى المستهلك النهائي.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="status-badge" style="font-size: 0.78rem;">منسوجات منزلية</span>
+            <span class="status-badge" style="font-size: 0.78rem;">حقائب وإكسسوارات</span>
+            <span class="status-badge" style="font-size: 0.78rem;">تجارة الجملة</span>
+            <span class="status-badge" style="font-size: 0.78rem;">توريد إقليمي</span>
+          </div>
+        </div>
+
+        <!-- Bento Card 2: Future Sustainability & Expansion -->
+        <div class="glass-card" style="padding: 42px; border-color: rgba(6, 182, 212, 0.25);">
+          <div style="width: 54px; height: 54px; border-radius: 16px; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); display: flex; align-items: center; justify-content: center; color: #06b6d4; margin-bottom: 24px;">
+            <i data-lucide="leaf" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 style="font-size: 1.55rem; font-weight: 800; color: #fff; margin-bottom: 14px;" data-i18n="visionCard2Title">
+            آفاق التوسع المستقبلي
+          </h3>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 24px;" data-i18n="visionCard2Text">
+            نعمل بجد على توسيع محفظتنا التجارية لتشمل استيراد المعدات الصناعية الحديثة، حلول الطاقة النظيفة وحماية البيئة، وتقنيات تدوير النفايات المتقدمة.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="status-badge" style="border-color: rgba(6, 182, 212, 0.4); color: #06b6d4; background: rgba(6, 182, 212, 0.1); font-size: 0.78rem;">طاقة نظيفة ومستدامة</span>
+            <span class="status-badge" style="border-color: rgba(6, 182, 212, 0.4); color: #06b6d4; background: rgba(6, 182, 212, 0.1); font-size: 0.78rem;">إعادة تدوير النفايات</span>
+            <span class="status-badge" style="border-color: rgba(6, 182, 212, 0.4); color: #06b6d4; background: rgba(6, 182, 212, 0.1); font-size: 0.78rem;">معدات صناعية متطورة</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: STRATEGIC FACILITIES & WAREHOUSES
+       ========================================================================== -->
+  <section class="section-facilities" id="facilities">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      
+      <div class="section-header-reveal" style="text-align: center; max-width: 780px; margin: 0 auto 50px;">
+        <div class="status-badge" style="margin-bottom: 16px;">
+          <i data-lucide="building-2" style="width: 15px; height: 15px;"></i>
+          <span data-i18n="facilitiesBadge">بنية تحتية لوجستية متطورة</span>
+        </div>
+        <h2 class="heading-display" style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 20px;">
+          <span data-i18n="facilitiesTitle">المصانع والمستودعات الاستراتيجية</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="facilitiesSubtitle">
+          مرافق تخزين وتصنيع حديثة مجهزة بأعلى معايير الأمان وإدارة المخزون في العراق ومصر.
+        </p>
+      </div>
+
+      <!-- Facility Tabs Navigation -->
+      <div class="facilities-tabs-nav">
+        <button class="facility-tab-btn active" data-facility="egypt" data-i18n="tabEgypt">مصنع مصر</button>
+        <button class="facility-tab-btn" data-facility="jamia" data-i18n="tabJamia">مستودع حي الجامعة</button>
+        <button class="facility-tab-btn" data-facility="shurja1" data-i18n="tabShurja1">مستودع الشورجة 1</button>
+        <button class="facility-tab-btn" data-facility="shurja2" data-i18n="tabShurja2">مستودع الشورجة 2</button>
+      </div>
+
+      <!-- Facility Showcase Interactive Panel -->
+      <div class="facility-showcase-panel active">
+        
+        <!-- Left: Gallery Viewer -->
+        <div>
+          <div class="gallery-main-view">
+            <img src="https://www.greengate.icu/images/e1.jpg" alt="Facility Image" loading="lazy">
+          </div>
+          <!-- Thumbnails Row -->
+          <div class="gallery-thumbs-row">
+            <div class="gallery-thumb active" data-src="https://www.greengate.icu/images/e1.jpg">
+              <img src="https://www.greengate.icu/images/e1.jpg" alt="Thumb 1">
+            </div>
+            <div class="gallery-thumb" data-src="https://www.greengate.icu/images/e2.jpg">
+              <img src="https://www.greengate.icu/images/e2.jpg" alt="Thumb 2">
+            </div>
+            <div class="gallery-thumb" data-src="https://www.greengate.icu/images/e3.jpg">
+              <img src="https://www.greengate.icu/images/e3.jpg" alt="Thumb 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Technical Details & Specifications -->
+        <div>
+          <h3 class="facility-display-title" style="font-size: 1.85rem; font-weight: 800; color: #fff; margin-bottom: 16px;" data-i18n="facilityEgyptTitle">
+            مصنع مصر لخطوط الإنتاج والملابس
+          </h3>
+          <p class="facility-display-desc" style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 30px;" data-i18n="facilityEgyptDesc">
+            منشأة صناعية وإنتاجية متطورة متخصصة في خطوط المنسوجات والملابس الجاهزة لتغذية الأسواق الإقليمية بأعلى جودة.
+          </p>
+
+          <!-- Specifications Grid -->
+          <div class="facility-specs-list">
+            <div class="spec-item">
+              <div class="spec-title" data-i18n="specLocTitle">الموقع الجغرافي</div>
+              <div class="spec-val">منطقة المصانع، القاهرة، مصر</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-title" data-i18n="specCapTitle">السعة التخزينية</div>
+              <div class="spec-val" data-i18n="specCapVal">طاقة استيعابية كبرى</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-title" data-i18n="specSecurityTitle">نظام الأمان</div>
+              <div class="spec-val" data-i18n="specSecurityVal">مراقبة متواصلة 24/7</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-title" data-i18n="specStatusTitle">حالة التشغيل</div>
+              <div class="spec-val" style="color: var(--primary-emerald-light);" data-i18n="specStatusVal">نشط بكامل الكفاءة</div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px;">
+            <a href="#contact" class="btn-primary" style="padding: 12px 28px;" data-i18n="navCta">طلب توريد من المستودع</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: ACTIVITIES & EXHIBITIONS
+       ========================================================================== -->
+  <section class="section-activities" id="activities">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      
+      <div class="section-header-reveal" style="text-align: center; max-width: 780px; margin: 0 auto 60px;">
+        <div class="status-badge" style="margin-bottom: 16px;">
+          <i data-lucide="sparkles" style="width: 15px; height: 15px;"></i>
+          <span data-i18n="eventsBadge">التواجد الميداني والمشاركات</span>
+        </div>
+        <h2 class="heading-display" style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 20px;">
+          <span data-i18n="eventsTitle">أبرز الأنشطة والفعاليات الدولية والمحلية</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="eventsSubtitle">
+          حضور فاعل في كبرى المحافل والمعارض الدولية لبناء شراكات مستدامة واستكشاف أحدث الابتكارات.
+        </p>
+      </div>
+
+      <!-- Activities Grid -->
+      <div class="activities-grid">
+        
+        <!-- Activity 1: Nelly Clothing Exhibition (With Video Player) -->
+        <div class="glass-card activity-card">
+          <div class="activity-media-wrap">
+            <video class="nelly-video-player" playsinline poster="https://www.greengate.icu/images/g1.jpg">
+              <source src="https://www.greengate.icu/images/activity-video.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
+            <!-- Custom Video Controls Overlay -->
+            <div class="video-custom-ctrls">
+              <button class="play-btn-pulse" aria-label="Play video">
+                <i data-lucide="play" style="width: 16px; height: 16px; margin-left: 2px;"></i>
+              </button>
+              <span style="font-size: 0.8rem; font-weight: 600; color: #fff;">فيديو جناح المعرض (مصر)</span>
+            </div>
+          </div>
+          <div class="activity-body">
+            <div class="activity-meta">
+              <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+              <span data-i18n="event1Badge">معرض دولي • مصر</span>
+            </div>
+            <h3 class="activity-title" data-i18n="event1Title">
+              مشاركة مميزة لشركة البوابة الخضراء في معرض نيلي للملابس – مصر
+            </h3>
+            <p class="activity-desc" data-i18n="event1Desc">
+              في خطوة تعكس التوسع الإقليمي المتسارع، شاركت الشركة بجناح خاص لعرض أرقى خطوط الأزياء بحضور المدير المفوض المهندس أيمن الجحيشي والمدير التجاري باسم الجنابي.
+            </p>
+            <!-- Photo Thumbs for Nelly -->
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <img src="https://www.greengate.icu/images/g1.jpg" alt="Nelly 1" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/g2.jpg" alt="Nelly 2" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/g3.jpg" alt="Nelly 3" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 2: Canton Fair 2026 China -->
+        <div class="glass-card activity-card">
+          <div class="activity-media-wrap">
+            <img src="https://www.greengate.icu/images/conton1.jpeg" alt="Canton Fair 2026" class="zoomable-img" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <div class="activity-meta">
+              <i data-lucide="globe" style="width: 14px; height: 14px;"></i>
+              <span data-i18n="event2Badge">معرض كانتون الدولي • الصين</span>
+            </div>
+            <h3 class="activity-title" data-i18n="event2Title">
+              المشاركة الرسمية في معرض كانتون 2026 – قوانغتشو، الصين
+            </h3>
+            <p class="activity-desc" data-i18n="event2Desc">
+              مشاركة رسمية ضمن المرحلة الثالثة المخصصة لقطاع النسيج والأزياء في أضخم حدث تجاري وصناعي على مستوى العالم لربط العلامات التجارية بالمصنعين.
+            </p>
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <img src="https://www.greengate.icu/images/conton1.jpeg" alt="Canton 1" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/conton2.jpeg" alt="Canton 2" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/conton3.jpeg" alt="Canton 3" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity 3: Anniversary Celebration -->
+        <div class="glass-card activity-card">
+          <div class="activity-media-wrap">
+            <img src="https://www.greengate.icu/images/g6.jpeg" alt="Company Anniversary" class="zoomable-img" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <div class="activity-meta">
+              <i data-lucide="calendar" style="width: 14px; height: 14px;"></i>
+              <span data-i18n="event3Badge">مناسبة سنوية</span>
+            </div>
+            <h3 class="activity-title" data-i18n="event3Title">
+              الاحتفال السنوي بذكرى تأسيس الشركة
+            </h3>
+            <p class="activity-desc" data-i18n="event3Desc">
+              نحتفي بكل فخر بعام آخر من التطور والإنجازات؛ ما بدأ برؤية واضحة يواصل ازدهاره بفضل الإخلاص، الجودة، وثقة عملائنا وشركائنا.
+            </p>
+          </div>
+        </div>
+
+        <!-- Activity 4: Art Workshop -->
+        <div class="glass-card activity-card">
+          <div class="activity-media-wrap">
+            <img src="https://www.greengate.icu/images/art1.jpeg" alt="Art Workshop" class="zoomable-img" loading="lazy">
+          </div>
+          <div class="activity-body">
+            <div class="activity-meta">
+              <i data-lucide="palette" style="width: 14px; height: 14px;"></i>
+              <span data-i18n="event4Badge">مبادرة مجتمعية وإبداعية</span>
+            </div>
+            <h3 class="activity-title" data-i18n="event4Title">
+              ورشة الفنون التفاعلية – إبداع بلا حدود
+            </h3>
+            <p class="activity-desc" data-i18n="event4Desc">
+              ورشة عمل فنية تفاعلية جمعت المشاركين لتعزيز الإبداع والتعبير الفني والتعاون المشترك بروح الابتكار والتجدد.
+            </p>
+            <div style="display: flex; gap: 10px; margin-top: auto;">
+              <img src="https://www.greengate.icu/images/art1.jpeg" alt="Art 1" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/art2.jpeg" alt="Art 2" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+              <img src="https://www.greengate.icu/images/art3.jpeg" alt="Art 3" class="zoomable-img" style="width: 60px; height: 60px; border-radius: 8px; object-fit: cover; cursor: pointer;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: EXECUTIVE BOARD & LEADERSHIP
+       ========================================================================== -->
+  <section class="section-team" id="team">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      
+      <div class="section-header-reveal" style="text-align: center; max-width: 780px; margin: 0 auto 60px;">
+        <div class="status-badge" style="margin-bottom: 16px;">
+          <i data-lucide="users" style="width: 15px; height: 15px;"></i>
+          <span data-i18n="teamBadge">قيادة مهنية متمرسة</span>
+        </div>
+        <h2 class="heading-display" style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 20px;">
+          <span data-i18n="teamTitle">فريق الإدارة التنفيذية</span>
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;" data-i18n="teamSubtitle">
+          كفاءات هندسية وتجارية وإدارية تقود الشركة نحو النمو والتميز والالتزام بالمعايير العالمية.
+        </p>
+      </div>
+
+      <!-- Team Grid (5 Cards) -->
+      <div class="team-grid">
+        
+        <!-- Member 1: Aymen Al-Juhaishi -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://www.greengate.icu/images/aymen.jpg" alt="Eng. Aymen Al-Juhaishi" class="team-avatar" loading="lazy">
+          </div>
+          <h4 class="team-name" data-i18n="member1Name">م. أيمن إدريس الجحيشي</h4>
+          <div class="team-role" data-i18n="member1Role">CEO • المدير المفوض</div>
+          <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link" style="width: 32px; height: 32px; margin-top: auto;">
+            <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <!-- Member 2: Basim Al-Janabi -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://www.greengate.icu/images/basim.jpg" alt="Econ. Basim Al-Janabi" class="team-avatar" loading="lazy">
+          </div>
+          <h4 class="team-name" data-i18n="member2Name">أ. باسم الجنابي</h4>
+          <div class="team-role" data-i18n="member2Role">CCO • المدير التجاري</div>
+          <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link" style="width: 32px; height: 32px; margin-top: auto;">
+            <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <!-- Member 3: Hassan Al-Zubaidi -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://www.greengate.icu/images/hassan.jpg" alt="Hassan Al-Zubaidi" class="team-avatar" loading="lazy">
+          </div>
+          <h4 class="team-name" data-i18n="member3Name">حسن الزبيدي</h4>
+          <div class="team-role" data-i18n="member3Role">CAO • المدير الإداري</div>
+          <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link" style="width: 32px; height: 32px; margin-top: auto;">
+            <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <!-- Member 4: Zina Monem -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://www.greengate.icu/images/zina.jpg" alt="Eng. Zina Monem" class="team-avatar" loading="lazy">
+          </div>
+          <h4 class="team-name" data-i18n="member4Name">م. زينة منعم</h4>
+          <div class="team-role" data-i18n="member4Role">COO • مدير العمليات</div>
+          <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link" style="width: 32px; height: 32px; margin-top: auto;">
+            <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+        <!-- Member 5: Rafal Jassim -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://www.greengate.icu/images/rafal.jpeg" alt="Rafal Jassim" class="team-avatar" loading="lazy">
+          </div>
+          <h4 class="team-name" data-i18n="member5Name">رفال جاسم</h4>
+          <div class="team-role" data-i18n="member5Role">المسؤول الإداري</div>
+          <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link" style="width: 32px; height: 32px; margin-top: auto;">
+            <i data-lucide="linkedin" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: LUXURY CTA BANNER
+       ========================================================================== -->
+  <section style="padding: 60px 4%; position: relative; z-index: 2;">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      <div class="glass-card" style="padding: 70px 40px; text-align: center; border-color: var(--border-emerald); background: radial-gradient(circle at center, rgba(16, 185, 129, 0.18) 0%, rgba(10, 15, 18, 0.95) 85%);">
+        
+        <h2 class="heading-display" style="font-size: clamp(2.2rem, 4vw, 3.4rem); margin-bottom: 20px;" data-i18n="ctaBannerTitle">
+          دعنا نحقق طموحاتك التجارية ونجعلها واقعاً ملموساً
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 720px; margin: 0 auto 40px;" data-i18n="ctaBannerSubtitle">
+          فريقنا المتخصص على أتم الاستعداد لتقديم حلول استيراد وتوريد مخصصة تلبي متطلبات أعمالك بدقة واحترافية.
+        </p>
+
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 18px;">
+          <a href="https://wa.me/9647858802023" target="_blank" class="btn-primary btn-whatsapp" style="padding: 16px 36px; font-size: 1.05rem;">
+            <i data-lucide="message-circle" style="width: 22px; height: 22px;"></i>
+            <span data-i18n="ctaBtnWhatsapp">تواصل معنا مباشرة عبر واتساب</span>
+          </a>
+          <a href="tel:+9647858802023" class="btn-secondary" style="padding: 16px 36px; font-size: 1.05rem;">
+            <i data-lucide="phone-call" style="width: 20px; height: 20px; color: var(--primary-emerald-light);"></i>
+            <span data-i18n="ctaBtnCall">اتصل بنا الآن</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 8: CONTACT & HEADQUARTERS
+       ========================================================================== -->
+  <section class="section-contact" id="contact">
+    <div style="max-width: 1320px; margin: 0 auto;">
+      
+      <div class="contact-layout">
+        
+        <!-- Left: Official Corporate Details -->
+        <div class="glass-card contact-info-card">
+          <div>
+            <div class="status-badge" style="margin-bottom: 16px;">
+              <i data-lucide="radio" style="width: 15px; height: 15px;"></i>
+              <span data-i18n="contactBadge">قنوات التواصل المباشرة</span>
+            </div>
+            <h2 class="heading-display" style="font-size: clamp(2rem, 3.2vw, 2.7rem); margin-bottom: 16px;" data-i18n="contactTitle">
+              تواصل مع فريقنا الاستشاري
+            </h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7;" data-i18n="contactSubtitle">
+              يسعدنا الرد على استفساراتكم وبحث فرص الشراكة وتوريد البضائع للمشاريع والشركات.
+            </p>
+
+            <div class="contact-channels">
+              
+              <!-- Email -->
+              <a href="mailto:info@greengate.icu" class="channel-item">
+                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <div class="channel-title" data-i18n="contactEmailTitle">البريد الإلكتروني الرسمي</div>
+                  <div class="channel-val">info@greengate.icu</div>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+9647858802023" class="channel-item">
+                <div class="channel-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <div class="channel-title" data-i18n="contactPhoneTitle">خط الاتصال المباشر</div>
+                  <div class="channel-val" dir="ltr">+964 785 880 2023</div>
+                </div>
+              </a>
+
+              <!-- Address -->
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <div class="channel-title" data-i18n="contactAddressTitle">المقر الرئيسي</div>
+                  <div class="channel-val" data-i18n="contactAddressVal">المنصور 42، 00609 بغداد، العراق</div>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="channel-item">
+                <div class="channel-icon"><i data-lucide="clock"></i></div>
+                <div>
+                  <div class="channel-title" data-i18n="contactWorkHoursTitle">ساعات العمل</div>
+                  <div class="channel-val" data-i18n="contactWorkHoursVal">السبت - الخميس: 9:00 ص - 6:00 م</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bottom Visual Card: Baghdad Location Indicator -->
+          <div style="padding: 20px; border-radius: 16px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 10px; height: 10px; border-radius: 50%; background: var(--primary-emerald); box-shadow: 0 0 10px var(--primary-emerald);"></div>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #fff;">بغداد، العراق (المنصور)</span>
+            </div>
+            <a href="https://maps.google.com/?q=Almansoor+Baghdad+Iraq" target="_blank" class="status-badge" style="cursor: pointer; text-decoration: none;">
+              <span>فتح في الخريطة</span>
+              <i data-lucide="external-link" style="width: 12px; height: 12px;"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Inquiry Form with EmailJS -->
+        <div class="glass-card contact-form-panel">
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 24px;" data-i18n="formTitle">
+            إرسال استفسار أو طلب توريد
+          </h3>
+
+          <form id="quoteContactForm">
+            <div class="form-grid">
+              
+              <div class="input-field-wrap">
+                <label for="formFirstName" class="input-label" data-i18n="formFirstName">الاسم الأول *</label>
+                <input type="text" id="formFirstName" class="custom-input" required data-i18n-ph="formFirstNamePh" placeholder="أدخل اسمك الأول">
+              </div>
+
+              <div class="input-field-wrap">
+                <label for="formLastName" class="input-label" data-i18n="formLastName">اسم العائلة</label>
+                <input type="text" id="formLastName" class="custom-input" data-i18n-ph="formLastNamePh" placeholder="أدخل اسم العائلة">
+              </div>
+
+              <div class="input-field-wrap form-group-full">
+                <label for="formEmail" class="input-label" data-i18n="formEmail">البريد الإلكتروني *</label>
+                <input type="email" id="formEmail" class="custom-input" required data-i18n-ph="formEmailPh" placeholder="yourname@example.com">
+              </div>
+
+              <div class="input-field-wrap form-group-full">
+                <label for="formSubject" class="input-label" data-i18n="formSubject">نوع الاستفسار</label>
+                <select id="formSubject" class="custom-input" style="background: #0d1519;">
+                  <option value="Textile" data-i18n="formSubjectOpt1">استيراد وتوريد منسوجات وحقائب</option>
+                  <option value="Partnership" data-i18n="formSubjectOpt2">شراكة تجارية أو وكالة</option>
+                  <option value="Logistics" data-i18n="formSubjectOpt3">خدمات لوجستية وتخزين</option>
+                  <option value="Other" data-i18n="formSubjectOpt4">أخرى</option>
+                </select>
+              </div>
+
+              <div class="input-field-wrap form-group-full">
+                <label for="formMessage" class="input-label" data-i18n="formMessage">نص الرسالة أو تفاصيل الطلب *</label>
+                <textarea id="formMessage" class="custom-input" required data-i18n-ph="formMessagePh" placeholder="اكتب تفاصيل طلبك أو الكميات المطلوبة..."></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; padding: 16px; font-size: 1rem;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              <span data-i18n="formSubmit">إرسال الرسالة الآن</span>
+            </button>
+
+            <!-- Status Feedback Container -->
+            <div id="formStatusMessage"></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer-wrap">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        <!-- Col 1: Brand & Identity -->
+        <div>
+          <div class="nav-brand" style="margin-bottom: 20px;">
+            <img src="https://www.greengate.icu/logo.avif" alt="Logo" width="40" height="40">
+            <div class="brand-text"><span>GREEN</span> <span style="color: var(--primary-emerald-light);">GATE</span></div>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 24px;" data-i18n="footerDesc">
+            شركة البوابة الخضراء للتجارة العامة والخدمات العامة ذ.م.م - بوابتكم الاستراتيجية للتجارة الدولية وسلاسل الإمداد المتطورة في العراق والمنطقة.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://www.linkedin.com/company/greengateiq/" target="_blank" class="nav-social-link"><i data-lucide="linkedin"></i></a>
+            <a href="https://wa.me/9647858802023" target="_blank" class="nav-social-link" style="color: #25D366;"><i data-lucide="message-circle"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 style="color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 20px;" data-i18n="footerNavTitle">روابط سريعة</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+            <li><a href="#hero" class="nav-link" data-i18n="navHome">الرئيسية</a></li>
+            <li><a href="#network" class="nav-link" data-i18n="navTrading">شبكة التجارة</a></li>
+            <li><a href="#facilities" class="nav-link" data-i18n="navFacilities">المستودعات والمصانع</a></li>
+            <li><a href="#activities" class="nav-link" data-i18n="navActivities">الأنشطة والمعارض</a></li>
+            <li><a href="#team" class="nav-link" data-i18n="navTeam">مجلس الإدارة</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Operations -->
+        <div>
+          <h4 style="color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 20px;" data-i18n="footerServicesTitle">مجالات العمل</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; color: var(--text-muted); font-size: 0.92rem;">
+            <li data-i18n="footerService1">تجارة واستيراد المنسوجات</li>
+            <li data-i18n="footerService2">حلول التخزين والمستودعات</li>
+            <li data-i18n="footerService3">الطاقة النظيفة وتدوير النفايات</li>
+            <li data-i18n="footerService4">الشراكات والوكالات الدولية</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Iraq HQ Direct -->
+        <div>
+          <h4 style="color: #fff; font-size: 1.1rem; font-weight: 700; margin-bottom: 20px;" data-i18n="contactAddressTitle">المقر الرئيسي</h4>
+          <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; margin-bottom: 16px;" data-i18n="contactAddressVal">
+            المنصور 42، 00609 بغداد، العراق
+          </p>
+          <div style="color: var(--primary-emerald-light); font-weight: 700; font-size: 1rem; margin-bottom: 8px;" dir="ltr">
+            +964 785 880 2023
+          </div>
+          <div style="color: var(--text-muted); font-size: 0.88rem;">
+            info@greengate.icu
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div data-i18n="footerRights">
+          جميع الحقوق محفوظة © 2026 شركة البوابة الخضراء للتجارة العامة والخدمات العامة ذ.م.م
+        </div>
+        <div>
+          <a href="#hero" class="status-badge" style="cursor: pointer; text-decoration: none;">
+            <span>العودة للأعلى</span>
+            <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Viewer -->
+  <div class="lightbox-modal">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img src="" alt="Enlarged Preview" class="lightbox-img">
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
